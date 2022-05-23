@@ -39,3 +39,12 @@ SELECT * FROM internships ORDER BY deadline;
 .print 'SORT BY APPLICATION SALARY'
 SELECT * FROM internships ORDER BY salaryPerHour;
 
+--- QUERY: FILTER OUT UNPAID INTERNSHIPS
+.print
+.print 'FILTER OUT UNPAID INTERNSHIPS'
+SELECT * FROM internships WHERE salaryPerHour != 0.0;
+
+--- QUERY: FILTER OUT NON-NASA INTERNSHIPS
+.print 
+.print 'FILTER OUT NON-NASA INTERNSHIPS'
+SELECT * FROM internships WHERE company = "NASA";
