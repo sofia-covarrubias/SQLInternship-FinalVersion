@@ -28,3 +28,14 @@ INSERT INTO internships values
 --- OUTPUT ENTIRE LIST
 .print 'OUTPUT ENTIRE LIST'
 SELECT * FROM internships;
+
+--- SORT BY APPLICATION DEADLINE
+.print
+.print 'SORT BY APPLICATION DEADLINE'
+SELECT * FROM internships ORDER BY deadline;
+
+--- SORT BY APPLICATION SALARY
+.print
+.print 'SORT BY APPLICATION SALARY'
+SELECT * FROM internships ORDER BY salaryPerHour;
+
